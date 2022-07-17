@@ -6,15 +6,17 @@ while (!userNum || isNaN(userNum)) {
   userNum = prompt("Please enter your number");
 }
 
+if (userNum <= 4) {
+  console.log('Sorry, no numbers');
+}
+
 for (let i = 0; i <= userNum; i++) {
 
   if (i % 5 === 0 && i !== 0) {
     console.log(i);
   }
 
-  if (userNum <= 4) {
-    console.log('Sorry, no numbers');
-    break
-  }
+
+
 
 }
