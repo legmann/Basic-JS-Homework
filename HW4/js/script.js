@@ -9,13 +9,13 @@ while (!num1 || isNaN(num1) || !num2 || isNaN(num2)) {
 }
 
 let mathOp = prompt('Enter operation + - * /');
-let result;
+
 
 num1 = Number(num1);
 num2 = Number(num2);
 
 function calc(num1, num2, mathOp) {
-
+  let result;
   switch (mathOp) {
     case "+":
       result = num1 + num2;
