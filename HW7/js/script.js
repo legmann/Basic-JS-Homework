@@ -1,11 +1,15 @@
 'use strict'
 
 const array = ['hello', 'world', 23, '23', null];
-const type = 'string';
+const type = 'null';
 
 function filterBy(array, type) {
 
   let result = array.filter((item) => {
+    if (type === 'null' && typeof item === 'object') {
+      return false;
+    }
+
     if (typeof item !== type) {
       return true;
     }
@@ -14,6 +18,5 @@ function filterBy(array, type) {
   return result;
 }
 
-console.log();
 console.log(filterBy(array, type));
 
