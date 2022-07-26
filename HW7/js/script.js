@@ -9,8 +9,7 @@ function filterBy(array, type) {
     if (type === 'null' && typeof item === 'object') {
       return false;
     }
-
-    if (typeof item !== type) {
+    else if (typeof item !== type) {
       return true;
     }
   });
