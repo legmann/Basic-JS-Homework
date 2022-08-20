@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-box {
+  display: block;
+  width: 1280px;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  color: #373737;
+}
+
+/* Header */
+
+.header .header-menu {
+  margin: 26px 0 26px 0;
+  text-align: center;
+}
+
+.header-menu .menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-menu .menu-item {
+  display: inline-block;
+  margin-right: 34px;
+  text-transform: uppercase;
+}
+
+.header-menu .menu-item:last-child {
+  margin: 0;
+}
+
+.header-menu .menu-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 2.7px;
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.header-menu .menu-link:hover {
+  color: #b22222;
+}
+
+.header .switch-theme-btn-block {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.header .switch-theme-btn-block .button-body {
+  padding: 18px 44px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  color: #dddddd;
+  background: #333333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header .switch-theme-btn-block .button-body:hover {
+  background: #252525;
+  color: #ffffff;
+}
+
+/* Content */
+
+.main-box .content {
+  display: block;
+  padding-bottom: 42px;
+}
+
+.content .content-title {
+  margin: 0;
+  padding: 48px 0 38px 0;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.18;
+  letter-spacing: 3.3px;
+}
+
+.content .content-text {
+  display: inline-block;
+  margin: 0 0 28px 0;
+  padding: 0 68px 0 68px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.content .content-text:last-of-type {
+  margin: 0;
+}
+
+.content .content-button {
+  margin-top: 66px;
+  text-align: center;
+}
+
+.content-button .button-body {
+  padding: 18px 44px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+  background: #ff0000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content-button .button-body:hover {
+  background: #b22222;
+}
+
+/* Footer */
+
+.main-box .footer {
+  display: block;
+  margin: 40px 0 29px 0;
+}
+
+.footer .footer-copyright {
+  margin: 0;
+  padding-right: 106px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+  line-height: 1.21;
+  letter-spacing: 2.3px;
+}
