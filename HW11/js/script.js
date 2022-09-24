@@ -1,29 +1,34 @@
 'use strict'
 
 const eyeIcon = document.querySelectorAll('.icon-password');
-const inputs = document.querySelectorAll('.input-text');
+const form = document.querySelector('.password-form');
 const btn = document.querySelector('.btn');
 
-eyeIcon.forEach((elem) => {
-  elem.addEventListener('click', (event) => {
-    const icon = event.target;
-    icon.classList.toggle('fa-eye-slash');
-    icon.classList.toggle('fa-eye');
 
-    const input = icon.closest('.input-wrapper').querySelector('.input-text');
+form.addEventListener('click', (event) => {
 
-    if (icon.classList.contains('fa-eye-slash')) {
-      input.type = 'text';
-    } else {
-      input.type = 'password';
-    }
-  });
+  if (!event.target.classList.contains('fas')) {
+    return;
+  }
+
+  const icon = event.target;
+  icon.classList.toggle('fa-eye-slash');
+  icon.classList.toggle('fa-eye');
+
+  const input = icon.closest('.input-wrapper').querySelector('.input-text');
+
+  if (icon.classList.contains('fa-eye-slash')) {
+    input.type = 'text';
+  } else {
+    input.type = 'password';
+  }
 });
 
 const errorMsg = document.createElement('span');
 
-btn.addEventListener('click', (event) => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
+  const inputs = event.currentTarget.querySelectorAll('.input-text');
 
   if (!inputs[0].value && !inputs[1].value) {
     alert('Заповніть будь-ласка поля!')
@@ -31,8 +36,7 @@ btn.addEventListener('click', (event) => {
 
   else if (inputs[0].value === inputs[1].value) {
     errorMsg.remove();
-    alert('You are welcome')
-
+    alert('You are welcome');
   }
 
   else {
